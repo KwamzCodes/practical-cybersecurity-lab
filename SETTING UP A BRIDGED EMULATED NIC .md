@@ -8,7 +8,6 @@ By configuring a bridged network interface card (NIC) or a virtual internal netw
 - In UTM, the Windows VM was selected and its settings accessed.
 - Within the network configuration, the network mode was adjusted to **Bridged (Advanced)**.
 
-![image.png](SETTING%20UP%20A%20BRIDGED%20EMULATED%20NIC%20OR%20A%20VIRTUAL%20INT%202542b90cbf2280728c97cbbebf0a88d1/image.png)
 
 - The same configuration was then applied to the Linux VM.
 - Once both virtual machines were configured, they were started simultaneously.
