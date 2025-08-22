@@ -18,7 +18,7 @@ sudo apt install nmap -y
 
 The -y answers YES to a prompt during the installation.
 
-![Image 14-08-2025 at 15.04.jpeg](INSTALLING%20THE%20NETWORK%20SECURITY%20TOOLS%202542b90cbf2280f89a8de23ca41c7b7d/Image_14-08-2025_at_15.04.jpeg)
+![Image 14-08-2025 at 15.04.jpeg](Images/Image_14-08-2025_at_15.04.jpeg)
 
 **NESSUS**
 
