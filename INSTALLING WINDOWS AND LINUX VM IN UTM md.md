@@ -17,24 +17,24 @@ There are two main methods of downloading the Windows 11 ARM64 ISO
 
  Crystal Fetch application was selected due to its faster download speed, whereas downloading from Microsoft required account creation.
 
-![Image 19-08-2025 at 14.39.jpeg](INSTALLING%20WINDOWS%20AND%20LINUX%20VM%20IN%20UTM%202542b90cbf228098ab10e9e5d47a344e/Image_19-08-2025_at_14.39.jpeg)
+![Image 19-08-2025 at 14.39.jpeg](Images/Image_19-08-2025_at_14.39.jpeg)
 
 1. **CREATING THE VIRTUAL MACHINE IN UTM**
 - Upon opening UTM, the process of creating a new virtual machine was initiated.
     
-    ![Image 24-06-2025 at 14.10.jpeg](INSTALLING%20WINDOWS%20AND%20LINUX%20VM%20IN%20UTM%202542b90cbf228098ab10e9e5d47a344e/Image_24-06-2025_at_14.10.jpeg)
+    ![Image 24-06-2025 at 14.10.jpeg](Images/Image_24-06-2025_at_14.10.jpeg)
     
 - The “Virtualise” option was selected.
 
-![Image 24-06-2025 at 14.12.jpeg](INSTALLING%20WINDOWS%20AND%20LINUX%20VM%20IN%20UTM%202542b90cbf228098ab10e9e5d47a344e/Image_24-06-2025_at_14.12.jpeg)
+![Image 24-06-2025 at 14.12.jpeg](Images/Image_24-06-2025_at_14.12.jpeg)
 
 - Followed by the choice of “Windows” as the operating system.
 
-![Image 24-06-2025 at 14.12.jpeg](INSTALLING%20WINDOWS%20AND%20LINUX%20VM%20IN%20UTM%202542b90cbf228098ab10e9e5d47a344e/Image_24-06-2025_at_14.12%201.jpeg)
+![Image 24-06-2025 at 14.12.jpeg](Images/Image_24-06-2025_at_14.12%201.jpeg)
 
 - The Windows ISO file was then imported into UTM.
 
-![Image 24-06-2025 at 14.17.jpeg](INSTALLING%20WINDOWS%20AND%20LINUX%20VM%20IN%20UTM%202542b90cbf228098ab10e9e5d47a344e/Image_24-06-2025_at_14.17.jpeg)
+![Image 24-06-2025 at 14.17.jpeg](Images/Image_24-06-2025_at_14.17.jpeg)
 
 - The virtual machine was configured with 8 GB of RAM, 8 CPU cores storage allocation of 64 GB, with all other settings retained at their default values.
 
@@ -65,7 +65,7 @@ After installation, the virtual machine initially lacked internet connectivity. 
 
 - The latest VirtIO drivers were downloaded from [https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/), specifically the virtio-win.iso.
     
-    ![Image 24-06-2025 at 18.56.jpeg](INSTALLING%20WINDOWS%20AND%20LINUX%20VM%20IN%20UTM%202542b90cbf228098ab10e9e5d47a344e/Image_24-06-2025_at_18.56.jpeg)
+    ![Image 24-06-2025 at 18.56.jpeg](Images/Image_24-06-2025_at_18.56.jpeg)
     
 - The ISO was mounted in UTM, and the network driver was installed via the Windows Device Manager.
 - After installation of the driver, network connectivity was restored and verified through successful ping responses.
@@ -84,21 +84,21 @@ After installation, the virtual machine initially lacked internet connectivity. 
 4. The next step involved attaching a bootable ISO image. A Linux ISO file was obtained from the official distribution website.
     - Ubuntu Server ISO was downloaded from [https://ubuntu.com](https://ubuntu.com/).
     
-    ![image.png](INSTALLING%20WINDOWS%20AND%20LINUX%20VM%20IN%20UTM%202542b90cbf228098ab10e9e5d47a344e/image.png)
+    ![image.png](Images/image.png)
     
     - The “Products” menu was accessed, and “Ubuntu Server” was selected.
     - The “Download Ubuntu Server” option was chosen, followed by “Alternative architectures.”
         
-        ![Image 14-08-2025 at 12.13.jpeg](INSTALLING%20WINDOWS%20AND%20LINUX%20VM%20IN%20UTM%202542b90cbf228098ab10e9e5d47a344e/Image_14-08-2025_at_12.13.jpeg)
+        ![Image 14-08-2025 at 12.13.jpeg](Images/Image_14-08-2025_at_12.13.jpeg)
         
     - The architecture matching the host CPU was selected; for an Apple Silicon M1 system, the ARM architecture was used.
     - The 24.04.3 LTS version was downloaded due to its long-term support and stability.
     
-    ![Image 14-08-2025 at 12.20.jpeg](INSTALLING%20WINDOWS%20AND%20LINUX%20VM%20IN%20UTM%202542b90cbf228098ab10e9e5d47a344e/Image_14-08-2025_at_12.20.jpeg)
+    ![Image 14-08-2025 at 12.20.jpeg](Images/Image_14-08-2025_at_12.20.jpeg)
     
 - Within UTM, the downloaded Ubuntu ARM ISO was attached to the VM as the boot image.
 
-![Image 13-08-2025 at 14.39.jpeg](INSTALLING%20WINDOWS%20AND%20LINUX%20VM%20IN%20UTM%202542b90cbf228098ab10e9e5d47a344e/Image_13-08-2025_at_14.39.jpeg)
+![Image 13-08-2025 at 14.39.jpeg](Images/Image_13-08-2025_at_14.39.jpeg)
 
 - Memory and CPU resources were allocated based on available host system resources.
 - Virtual storage was assigned to the VM.
@@ -112,7 +112,7 @@ After installation, the virtual machine initially lacked internet connectivity. 
 
 - The installation menu presented the option to “Try or Install Ubuntu Server.” The selection was made to proceed with installation.
 
-![Image 14-08-2025 at 12.32.jpeg](INSTALLING%20WINDOWS%20AND%20LINUX%20VM%20IN%20UTM%202542b90cbf228098ab10e9e5d47a344e/Image_14-08-2025_at_12.32.jpeg)
+![Image 14-08-2025 at 12.32.jpeg](Images/Image_14-08-2025_at_12.32.jpeg)
 
 - The installation language was selected.
 - The desired keyboard layout was chosen.
@@ -121,7 +121,7 @@ After installation, the virtual machine initially lacked internet connectivity. 
 - Proxy settings were left blank.
 - Mirror location tests were executed and passed successfully.
 
-![Image 14-08-2025 at 12.53.jpeg](INSTALLING%20WINDOWS%20AND%20LINUX%20VM%20IN%20UTM%202542b90cbf228098ab10e9e5d47a344e/Image_14-08-2025_at_12.53.jpeg)
+![Image 14-08-2025 at 12.53.jpeg](Images/Image_14-08-2025_at_12.53.jpeg)
 
 - Storage configuration was left at default settings, and the setup proceeded.
 - User credentials were entered to create a profile.
@@ -131,12 +131,12 @@ After installation, the virtual machine initially lacked internet connectivity. 
 - Server snaps configuration was reviewed and finalized.
 - The installation process completed successfully.
 
-![Image 14-08-2025 at 13.03.jpeg](INSTALLING%20WINDOWS%20AND%20LINUX%20VM%20IN%20UTM%202542b90cbf228098ab10e9e5d47a344e/Image_14-08-2025_at_13.03.jpeg)
+![Image 14-08-2025 at 13.03.jpeg](Images/Image_14-08-2025_at_13.03.jpeg)
 
 - The VM was instructed to reboot; however, an initial reboot failure occurred, necessitating a manual restart.
 - The ISO image was removed from the CD/DVD drive to prevent the installation process from restarting.
 
-![Image 14-08-2025 at 13.30.jpeg](INSTALLING%20WINDOWS%20AND%20LINUX%20VM%20IN%20UTM%202542b90cbf228098ab10e9e5d47a344e/Image_14-08-2025_at_13.30.jpeg)
+![Image 14-08-2025 at 13.30.jpeg](Images/Image_14-08-2025_at_13.30.jpeg)
 
 - After clearing the ISO, the VM was restarted.
 - User credentials were provided to log into the Ubuntu server successfully.
