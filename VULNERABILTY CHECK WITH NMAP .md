@@ -23,7 +23,7 @@ sudo nmap -sT 192.168.xxx.xx  #scans for ports
 
 ```
 
-![image.png](VULNERABILTY%20CHECK%20WITH%20NMAP%202542b90cbf228067b55bf13ca4637768/1a5a1fc4-dde0-4075-a84a-09d61a0bce70.png)
+![image.png](Images/1a5a1fc4-dde0-4075-a84a-09d61a0bce70.png)
 
 **Findings:**
 
@@ -39,7 +39,7 @@ nmap -p 135 your.public.ip.address
 nmap -p 135 your.public.ip.address
 ```
 
-![Image 17-08-2025 at 13.17.jpeg](VULNERABILTY%20CHECK%20WITH%20NMAP%202542b90cbf228067b55bf13ca4637768/486d4f1a-3c0c-435a-b9d6-25dca5917e68.png)
+![Image 17-08-2025 at 13.17.jpeg](Images/486d4f1a-3c0c-435a-b9d6-25dca5917e68.png)
 
 **Risk of Open Ports:**
 
@@ -59,13 +59,13 @@ Since these ports contribute to core Windows functionality, they cannot be fully
 
 The outdated SMBv1 protocol should be disabled while keeping SMBv2 and SMBv3 enabled. This can be achieved through the Windows Features panel by deselecting “SMB 1.0/CIFS File Sharing Support” and restarting the system.
 
-![image.png](VULNERABILTY%20CHECK%20WITH%20NMAP%202542b90cbf228067b55bf13ca4637768/image.png)
+![image.png](Images/imagecopy3.png)
 
 **Block SMB Ports with Firewall**
 
 Inbound firewall rules can be configured to block traffic on TCP port 445 across Domain, Private, and Public profiles, thereby reducing external exposure without fully disabling SMB services.
 
-![Image 17-08-2025 at 13.49.jpeg](VULNERABILTY%20CHECK%20WITH%20NMAP%202542b90cbf228067b55bf13ca4637768/Image_17-08-2025_at_13.49.jpeg)
+![Image 17-08-2025 at 13.49.jpeg](Images/Image_17-08-2025_at_13.49.jpeg)
 
 **Port 139 (NetBIOS)**
 
@@ -77,7 +77,7 @@ The NetBIOS service can be disabled through the network adapter’s advanced set
 - In the “Change adapter settings” > NIC > Properties> Internet Protocol Version 4 (TCP/IPv4)
 - In Advanced > WINS > Disable NetBIOS over TCP/IP
 
-![Image 19-08-2025 at 17.23.jpeg](VULNERABILTY%20CHECK%20WITH%20NMAP%202542b90cbf228067b55bf13ca4637768/Image_19-08-2025_at_17.23.jpeg)
+![Image 19-08-2025 at 17.23.jpeg](Images/Image_19-08-2025_at_17.23.jpeg)
 
 **Blocking NetBIOS port with Firewall**
 
@@ -89,17 +89,17 @@ The NetBIOS service can be disabled through the network adapter’s advanced set
 
 - Core RPC functionality should be retained, but services such as *Remote Registry* and *Routing and Remote Access* can be disabled via the Services console if not required.
 
-![image.png](VULNERABILTY%20CHECK%20WITH%20NMAP%202542b90cbf228067b55bf13ca4637768/image%201.png)
+![image.png](Images/image%201.png)
 
-![image.png](VULNERABILTY%20CHECK%20WITH%20NMAP%202542b90cbf228067b55bf13ca4637768/image%202.png)
+![image.png](Images/image%202.png)
 
-![image.png](VULNERABILTY%20CHECK%20WITH%20NMAP%202542b90cbf228067b55bf13ca4637768/image%203.png)
+![image.png](Images/image%203.png)
 
 Additionally, system properties can be configured to disallow remote connections.
 
-![Image 17-08-2025 at 20.31.jpeg](VULNERABILTY%20CHECK%20WITH%20NMAP%202542b90cbf228067b55bf13ca4637768/Image_17-08-2025_at_20.31.jpeg)
+![Image 17-08-2025 at 20.31.jpeg](Images/Image_17-08-2025_at_20.31.jpeg)
 
-![image.png](VULNERABILTY%20CHECK%20WITH%20NMAP%202542b90cbf228067b55bf13ca4637768/image%204.png)
+![image.png](Images/image%204.png)
 
 ## **Conclusion**
 
